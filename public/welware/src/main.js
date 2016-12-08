@@ -10,7 +10,7 @@ Vue.use(VueRouter)
 var router = new VueRouter({
   routes: [
     {
-      path: '/hello',
+      path: '/',
       component: Hello
     },
     {
