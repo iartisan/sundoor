@@ -1,16 +1,9 @@
 <template>
   <div class="hello">
   <div id="headlogo">
-    　<div id="tablerow">
-      <div id="logo1">
-         <img src="../assets/logo.png" alt="logo" />
-      </div>
-    　  <div id="logo2">
-    　    男性公益协会 <br>
-          MALE HEALTH
-    　  </div>
+    　    <span id="logo1">男性健康公益协会 </span><br>
+          <span id="logo2">MALE HEALTH</span>
     　</div>
-  </div>
   <div id="rule">
     <a href="#" target="_blank">活动规则</a>
   </div>
@@ -40,7 +33,21 @@ export default {
 
         }
 
-#headlogo { position: absolute;}
+#headlogo { position: relative;
+            background-image: url(../assets/logo.png);
+            background-repeat: no-repeat;
+            background-size: 220px 140px;
+            font-size: 36px;
+            }
+
+#logo1    { color: #2F4F4F;
+            position: relative;
+            margin: 70px 0px 20px 130px;
+            top: 20px;}
+
+#logo2    { position: relative;
+            margin: 60px 0px 20px 150px;
+            top: 20px;}
 
 #rule     { background-color: #E00000;
             width: 290px;
@@ -66,22 +73,8 @@ export default {
            border-radius: 10px;
            border-style: groove;}
 
-div#headlogo { display: table;}
-
-div#tablerow { display: table-row;}
-
-div#logo1 { display: table-cell;
-            width: 50px;}
-
-div#logo2 { display: table-cell;
-            font-size: 20px;
-            padding: 0px;
-            margin: 0px;}
-
 a:link  {color: white;
          text-decoration: none;}
 a:visited{color: white;
           text-decoration: none;}
 </style>
-
-
