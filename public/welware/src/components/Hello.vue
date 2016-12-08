@@ -28,35 +28,33 @@ export default {
         position: relative;
         width: 100%;
         height: 100%;
-        font-size: 50px;
-        font-weight: bolder;
-
-        }
+        font-size: 19px;
+        font-weight: bolder;}
 
 #headlogo { position: relative;
             background-image: url(../assets/logo.png);
             background-repeat: no-repeat;
-            background-size: 220px 140px;
-            font-size: 36px;
-            height: 122px;
-            background-color: white;
-            }
+            background-size: 110px 55px;
+            background-position: -10px -4px;
+            font-size: 15px;
+            height: 45px;
+            background-color: white;  }
 
 #logo1    { color: #2F4F4F;
             position: relative;
-            margin: 70px 0px 20px 130px;
-            top: 20px;}
+            margin: 60px 0px 20px 52px;
+            top: 7px;}
 
 #logo2    { position: relative;
-            margin: 60px 0px 20px 150px;
-            top: 20px;}
+            margin: 60px 0px 20px 60px;
+            top: 5px;}
 
 #rule     { background-color: #E00000;
-            width: 290px;
-            height: 80px;
+            width: 120px;
+            height: 33px;
             position: absolute;
-            left: 140px;
-            top:1350px;
+            left: 11%;
+            top: 77%;
             text-align: center;
             color: white;
             font-weight: 900;
@@ -64,11 +62,11 @@ export default {
             border-style: groove;}
 
 #contact { background-color: #9c3;
-           width: 290px;
-           height: 80px;
+           width: 120px;
+           height: 33px;
            position: absolute;
-           left: 550px;
-           top:1350px;
+           left: 57%;
+           top: 77%;
            text-align: center;
            color: white;
            font-weight: bold;

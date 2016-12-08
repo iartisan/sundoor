@@ -23,7 +23,6 @@ html, body{
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 50px;
 }
 #app {
   height: 100%;
