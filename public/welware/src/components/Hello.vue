@@ -23,12 +23,7 @@
 
 <script>
 export default {
-  name: 'hello',
-  data () {
-    return {
-      msg: 'Fuck Your mother!!!'
-    }
-  }
+  name: 'hello'
 }
 </script>
 
