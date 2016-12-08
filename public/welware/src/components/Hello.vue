@@ -89,14 +89,4 @@ a:visited{color: white;
           text-decoration: none;}
 </style>
 
-<script>
-export default {
-  name: 'hello',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
-}
 
-</style>
