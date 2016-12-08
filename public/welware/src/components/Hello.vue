@@ -38,6 +38,8 @@ export default {
             background-repeat: no-repeat;
             background-size: 220px 140px;
             font-size: 36px;
+            height: 122px;
+            background-color: white;
             }
 
 #logo1    { color: #2F4F4F;
