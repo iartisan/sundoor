@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
       <div id="rule">
-        <router-link to='/swear'>活動規則</router-link>
+        <router-link to='/swear'>活动规则</router-link>
       </div>
       <div id="contact">
         <a href="#" target="_blank">支持我们</a>
