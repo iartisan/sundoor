@@ -1,0 +1,37 @@
+<%= form_for(visit_history) do |f| %>
+  <% if visit_history.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(visit_history.errors.count, "error") %> prohibited this visit_history from being saved:</h2>
+
+      <ul>
+      <% visit_history.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pageInfo %>
+    <%= f.text_field :pageInfo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ip %>
+    <%= f.text_field :ip %>
+  </div>
+
+  <div class="field">
+    <%= f.label :openId %>
+    <%= f.text_field :openId %>
+  </div>
+
+  <div class="field">
+    <%= f.label :stayTime %>
+    <%= f.text_field :stayTime %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

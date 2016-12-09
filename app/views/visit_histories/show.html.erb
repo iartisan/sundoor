@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pageinfo:</strong>
+  <%= @visit_history.pageInfo %>
+</p>
+
+<p>
+  <strong>Ip:</strong>
+  <%= @visit_history.ip %>
+</p>
+
+<p>
+  <strong>Openid:</strong>
+  <%= @visit_history.openId %>
+</p>
+
+<p>
+  <strong>Staytime:</strong>
+  <%= @visit_history.stayTime %>
+</p>
+
+<%= link_to 'Edit', edit_visit_history_path(@visit_history) %> |
+<%= link_to 'Back', visit_histories_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pageInfo: MyString
+  ip: MyString
+  openId: MyString
+  stayTime: MyString
+
+two:
+  pageInfo: MyString
+  ip: MyString
+  openId: MyString
+  stayTime: MyString
