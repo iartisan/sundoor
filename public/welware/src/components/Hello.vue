@@ -1,22 +1,34 @@
 <template>
   <div class="hello">
-  <div id="headlogo">
-    　    <span id="logo1">男性健康公益协会 </span><br>
-          <span id="logo2">MALE HEALTH</span>
-    　</div>
-  <div id="rule">
-    <a href="#" target="_blank">活动规则</a>
+      <div id="rule">
+        <router-link to='/swear'>活動規則</router-link>
+      </div>
+      <div id="contact">
+        <a href="#" target="_blank">支持我们</a>
+      </div>
   </div>
-  <div id="contact">
-    <a href="#" target="_blank">支持我们</a>
-
-  </div>
-</div>
 </template>
 
 <script>
 export default {
-  name: 'hello'
+  name: 'hello',
+  mounted: function () {
+    var token = document.querySelector('meta[name="csrf-token"]').content
+    var data = {
+      utf8: '✓',
+      authenticity_token: token,
+      visit_history: {
+        pageInfo: 'hello',
+        openId: 'test',
+        stayTime: 'fiiii'
+      }
+    }
+    this.$http.post('/visit_histories.json', data).then((response) => {
+      console.log(response)
+    }, (error) => {
+      console.log(error)
+    })
+  }
 }
 </script>
 
@@ -31,23 +43,6 @@ export default {
         font-size: 19px;
         font-weight: bolder;}
 
-#headlogo { position: relative;
-            background-image: url(../assets/logo.png);
-            background-repeat: no-repeat;
-            background-size: 110px 55px;
-            background-position: -10px -4px;
-            font-size: 15px;
-            height: 45px;
-            background-color: white;  }
-
-#logo1    { color: #2F4F4F;
-            position: relative;
-            margin: 60px 0px 20px 52px;
-            top: 7px;}
-
-#logo2    { position: relative;
-            margin: 60px 0px 20px 60px;
-            top: 5px;}
 
 #rule     { background-color: #E00000;
             width: 120px;

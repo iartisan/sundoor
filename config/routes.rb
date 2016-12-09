@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :visit_histories
   get 'welcome/index'
   get 'welcome/fuck'
 
