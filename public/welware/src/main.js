@@ -11,6 +11,7 @@ import Hello from './components/Hello'
 import Foo from './components/Foo'
 import Swear from './components/Swear'
 import Congratulation from './components/Congratulation'
+import Rank from './components/Rank'
 
 Vue.use(VueRouter)
 Vue.use(VueResource)
@@ -32,6 +33,10 @@ var router = new VueRouter({
     {
       path: '/congratulation',
       component: Congratulation
+    },
+    {
+      path: '/rank',
+      component: Rank
     }
   ]
 })

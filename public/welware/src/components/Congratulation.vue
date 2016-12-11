@@ -38,7 +38,7 @@
                   font-size: 13.5px;}
 
 #qiandao { width: 90%;
-           height: 20%;
+           height: 2%;
            position: relative;
            top: 1%;
            left: 5%;}

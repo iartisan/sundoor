@@ -7,6 +7,7 @@
     <div id="nav">
       <router-link to='/'>活動</router-link>
       <router-link to='/congratulation'>恭喜</router-link>
+      <router-link to='rank'>Rank</router-link>
     </div>
     <router-view></router-view>
   </div>
