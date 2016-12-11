@@ -14,4 +14,7 @@ class WelcomeController < ApplicationController
       render json: Net::HTTP.get(uri)
     end
   end
+  def code
+    render layout: false
+  end
 end

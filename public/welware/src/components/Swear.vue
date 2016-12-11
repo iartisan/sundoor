@@ -1,17 +1,16 @@
 <template>
   <div id="swear">
-      <img id="slogan1" src="../assets/slogan1.png" alt="slogan" />
-
-<div id="slogan">
-<span>  <button id="wo" type="button" class="slogan2">我</button>  </span>
-<span>  <button id="fa" type="button" class="slogan2">发</button>  </span>
-<span>  <button id="shi" type="button" class="slogan2">誓</button>  </span>
-<span>  <button id="jin" type="button" class="slogan2">今</button>  </span>
-<span>  <button id="tian" type="button" class="slogan2">天</button>  </span>
-<span>  <button id="mei" type="button" class="slogan2">没</button>  </span>
-<span>  <button id="you" type="button" class="slogan2">有</button>  </span>
-<span>  <button id="lu" type="button" class="slogan2">撸</button>  </span>
-</div>
+    <img id="slogan1" src="../assets/slogan1.png" alt="slogan" />
+    <div id="slogan">
+        <span>  <button id="wo" type="button" class="slogan2">我</button>  </span>
+        <span>  <button id="fa" type="button" class="slogan2">发</button>  </span>
+        <span>  <button id="shi" type="button" class="slogan2">誓</button>  </span>
+        <span>  <button id="jin" type="button" class="slogan2">今</button>  </span>
+        <span>  <button id="tian" type="button" class="slogan2">天</button>  </span>
+        <span>  <button id="mei" type="button" class="slogan2">没</button>  </span>
+        <span>  <button id="you" type="button" class="slogan2">有</button>  </span>
+        <span>  <button id="lu" type="button" class="slogan2">撸</button>  </span>
+    </div>
 
   <div id="inputbg">
     <div class="input-append">
@@ -48,15 +47,22 @@
           height: 10%;
           padding-top: 3%;
           padding-bottom: 25%;
-          margin: 0 auto;}
+          margin: 0 auto;
+          }
+#slogan span {
+  padding: 0;
+}
 
-.slogan2 { width: 20%;
-           height: 100%;
-           margin: 2%;}
 
-button.slogan2 { border-radius: 5rem;
-                 font-size: 2.5rem;
-                 color: white;}
+button.slogan2 {
+  width: 22%;
+  font-size: 1.5rem;
+  line-height: 3.8rem;
+  color: white;
+  border-radius:6rem;
+  padding:0;
+  margin:2px;
+}
 
 #swear {background-image: url(../assets/bgimg2.png);
          background-repeat: repeat;
@@ -83,10 +89,14 @@ button.slogan2 { border-radius: 5rem;
 
 #appendedInputButton { position: relative;
                        margin-top: 4%;
-                       left: 3%;}
+                       left: 3%;
+                       border-top-right-radius: 0;
+                       border-bottom-right-radius: 0;
+                       }
 
 #btn { color: white;
-       font-size: 1.3em;
+       font-size: 1.2em;
+       line-heihgt: 1.3em;
        font-weight: bolder;
        background-color: #FF4500;
        border-style: none;

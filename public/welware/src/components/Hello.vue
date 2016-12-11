@@ -1,18 +1,35 @@
 <template>
   <div class="hello">
-      <div id="rule">
-        <router-link to='/swear'>活动规则</router-link>
-      </div>
-      <div id="contact">
+    <transition
+      enter-active-class="animated bounceInUp"
+    >
+    <div v-if="show" id="rule">
+      <router-link to='/swear'>活动规则</router-link>
+    </div>
+    </transition>
+    <transition
+      name="zhichiwomen"
+      enter-active-class="animated tada"
+    >
+      <div v-if="show" id="contact">
         <a href="#" target="_blank">支持我们</a>
       </div>
+    </transition>
   </div>
 </template>
 
 <script>
 export default {
   name: 'hello',
+  data: function () {
+    return {
+      show: false
+    }
+  },
+  methods: {
+  },
   mounted: function () {
+    this.show = 1
     var token = document.querySelector('meta[name="csrf-token"]').content
     var data = {
       utf8: '✓',
