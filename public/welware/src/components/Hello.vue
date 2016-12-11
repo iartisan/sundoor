@@ -28,13 +28,19 @@ export default {
     }, (error) => {
       console.log(error)
     })
+  },
+  beforeDestory: function () {
+    console.log('Hello beforeDestory')
+  },
+  destoryed: function () {
+    console.log('Hello destoryed')
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.hello {background-image: url(../assets/bgimg.jpg);
+.hello {background-image: url('../assets/bgimg.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
         position: relative;

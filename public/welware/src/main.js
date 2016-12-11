@@ -1,12 +1,17 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
+
+import store from './store'
+
+import wx from 'weixin-js-sdk'
+
 import App from './App'
 import Hello from './components/Hello'
 import Foo from './components/Foo'
 import Swear from './components/Swear'
+import Congratulation from './components/Congratulation'
 
-/* eslint-disable no-new */
 Vue.use(VueRouter)
 Vue.use(VueResource)
 
@@ -23,12 +28,19 @@ var router = new VueRouter({
     {
       path: '/swear',
       component: Swear
+    },
+    {
+      path: '/congratulation',
+      component: Congratulation
     }
   ]
 })
 
+//  todo wx.config
+
 new Vue({
+  store: store,
+  wx: wx,
   router: router,
   render: h => h(App)
 }).$mount('#app')
-

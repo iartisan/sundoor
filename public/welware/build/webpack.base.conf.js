@@ -14,7 +14,6 @@ module.exports = {
   entry: {
     app: [
       './src/main.js',
-      'webpack-hot-middleware/client?path=http://localhost:5000/__webpack_hmr'
       ]
   },
   output: {
@@ -47,7 +46,10 @@ module.exports = {
         test: /\.js$/,
         loader: 'eslint',
         include: projectRoot,
-        exclude: /node_modules/
+        exclude: [
+          /node_modules/,
+          /src\/lib/
+        ]
       }
     ],
     loaders: [
