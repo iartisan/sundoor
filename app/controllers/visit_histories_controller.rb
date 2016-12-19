@@ -8,6 +8,11 @@ class VisitHistoriesController < ApplicationController
     @visit_histories = VisitHistory.all
   end
 
+  def history_by_user
+    @history_by_user = VisitHistory.history_by_user
+    render html: @history_by_user.html_safe
+  end
+
   # GET /visit_histories/1
   # GET /visit_histories/1.json
   def show
